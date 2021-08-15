@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Banking Page</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div>
+   <a class="text-2xl text-red-400 px-5 font-bold" href="index.html">Back to home</a>
+</div>
+
+    <header>
+        <h1 class="text-5xl text-center mt-16 mb-6 capitalize">Let's get some  <span class="text-purple-900">Moooney !!</span></h1>
+    </header> 
+    <main class="w-3/4 mx-auto">
+         <!-- balance and transection  -->
+        <section class="mt-12 ">
+               <div class="grid lg:grid-cols-3 gap-4 ">
+                    <div class="bg-purple-400 p-8 rounded-3xl text-white text-center">
+                        <h3 class="text-3xl">Diposite</h3>
+                        <h4 class="text-5xl">$<span  id="deposite-total">00</span></h4>
+                    </div>
+                    <div class="bg-blue-400 p-8 rounded-3xl text-white text-center">
+                        <h3 class="text-3xl">Withdraw</h3>
+                        <h4 class="text-5xl">$<span id="withdraw-total">00</span></h4>
+                    </div>
+                    <div class="bg-pink-400 p-8 rounded-3xl text-white text-center">
+                        <h3 class="text-3xl">Balance</h3>
+                        <h4 class="text-5xl">$<span id="balence-total">100</span></h4>
+                    </div>
+
+               </div>             
+        </section>
+        <!-- deposite and withdraw  -->
+        <section class="bg-gradient-to-r from-purple-400 via-blue-500 to-pink-500 my-12 rounded-3xl">
+            <div class="grid lg:grid-cols-2">
+
+                            <!-- diposite  -->
+                <div>
+                    <h3 class="text-2xl text-center py-6 pt-8 font-bold">Please deposite</h3>
+                        
+                    <div class="mx-auto text-center pb-16">
+                        <input id="deposite-input" class="rounded-full px-4 p-4 mr-4 focus:outline-none" type="text" placeholder="$ you want to deposite">
+                        <button id="deposite-button" class=" sm:pt-5 bg-red-500 text-white font-bold py-4 px-10 rounded-full hover:bg-purple-700">deposite</button>
+                    </div>
+
+                </div>
+                                <!-- withdraw -->
+                <div>
+                    <h3 class="text-2xl text-center py-6 pt-8 font-bold">Please withdraw</h3>
+                        
+                    <div class="mx-auto text-center pb-16">
+                        <input id="withdraw-input" class="rounded-full px-4 p-4 mr-4 focus:outline-none" type="text" placeholder="$ you want to deposite">
+                        <button id="withdraw-button" class="sm:pt-5 bg-red-500 text-white font-bold py-4 px-10 rounded-full hover:bg-purple-700">Withdraw</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./bank.js"></script>
+</body>
+</html>

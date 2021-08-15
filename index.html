@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js bank project</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @media(max-width: 700px){
+            #user-email{
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+        }
+    </style>
+</head>
+<body>
+
+   <header>
+       <h1 class="text-5xl text-center mt-16 mb-6 capitalize">welcome to  <span class="text-purple-900">personal-bank !!</span></h1>
+   </header> 
+
+ <section class="bg-green-100 w-3/4 mx-auto mt-10 rounded-lg">
+    <main>
+        <h3 class="text-center p-4 text-red-400 text-2xl">Please Login</h3>
+        <div class="text-center py-16">
+            <input id="user-email" class="py-2 rounded-full mr-5 px-3 focus:outline-none" type="text" placeholder="your email">
+            <input id="user-password" class="py-2 rounded-full px-3 focus:outline-none" type="password" name="" id="" placeholder="'your passworld">
+            <button id="login-submit" class="block mx-auto my-4 bg-gradient-to-r from-yellow-300 via-red-300 to-pink-200 py-4 px-12 text-1xl rounded-full font-medium">log in</button>
+        </div>
+ </section>
+
+   </main>
+
+
+<script src="./login.js"></script>
+</body>
+</html>
